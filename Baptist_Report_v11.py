@@ -300,7 +300,7 @@ def send_email_mapi(subject, body, to_email, attachment_path):
 # Usage
 subject = f"""Week of {mondaystrsubject} Baptist Pharmacy Report"""
 body    = f"""An updated report is attached."""
-to_email = 'nicole.murray@elevancehealth.com;Lanz, Lindsay <Lindsay.Lanz@carelon.com>' #Cheryl.Hayes@carelon.com; Christina.Szymanski@elevancehealth.com'
+to_email = 'test.test@test.com;'
 attachment_path = filexlsx
 
 send_email_mapi(subject, body, to_email, attachment_path)
