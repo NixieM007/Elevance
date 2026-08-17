@@ -57,8 +57,8 @@ class ProviderDataValidator:
     def create_db_connection(self):
         """Create a connection to the SQL Server database."""
         try:
-            server = self.config.get("db_server", "DC04PWVSQL402\\sql01, 10001")
-            database = self.config.get("db_name", "RX_PROVIDER_COLLAB")
+            server = self.config.get("db_server", "test")
+            database = self.config.get("db_name", "test")
 
             # Connection string for SQL Server with Windows authentication
             conn_str = f'DRIVER={{SQL Server}};SERVER={server};DATABASE={database};Trusted_Connection=yes;'
