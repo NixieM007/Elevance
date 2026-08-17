@@ -7,8 +7,8 @@ from tkinter import messagebox, ttk, filedialog
 
 
 # Fixed paths
-SOURCE_DIR = r"\\va10pavfle009\Transparency\PTDM\BCBSA-NtwkOpt\Inbound Test"
-DEST_BASE_DIR = r"\\va10pavfle009\Transparency\PTDM\BCBSA-NtwkOpt\Outbound Test"
+SOURCE_DIR = r"\\test\test\test\test\Inbound Test"
+DEST_BASE_DIR = r"\\test\test\test\test\Outbound Test"
 
 
 # Color theme
