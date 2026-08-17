@@ -12,7 +12,7 @@ import tkinter as tk
 from tkinter import simpledialog
 
 
-FilePath = r"\\va10pavfle009\Transparency\PTDM\PDL\Quality\QLTY Table Validation\QLTY_SCORG PQSM validation\QLTY_SCORG_validation_Template.xlsx"
+FilePath = r"\\test\test\test\test\test\test\test\QLTY_SCORG_validation_Template.xlsx"
 today_date = datetime.now().strftime('%Y-%m-%d')
 SHELVE_FILENAME = 'credentials_shelve'
 
