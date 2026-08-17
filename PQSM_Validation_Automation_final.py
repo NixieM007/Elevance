@@ -597,8 +597,6 @@ def get_credentials():
 
     return username, password
 
-# USERNAME = "AN522610AD"
-# PASSWORD = "Ju!7J6gvM-PH4rNQRFzI"
 
 def set_credentials_to_env(username, password):
     os.environ['USERNAME'] = username
@@ -617,13 +615,9 @@ def prompt_credentials():
 
 
 USERNAME, PASSWORD = get_credentials()
-ACCOUNT = "carelon-edaprod1.privatelink"
-AUTHENTICATOR = "https://portalsso.elevancehealth.com?snowflake=okta"
 
-WAREHOUSE = "DL_MDO_USER_WH_M"
-DATABASE = "P01_PDL"
-SCHEMA = "P01_EDL_NOHAPHI"
-ROLE = "P01_EDL_NOHAPHI_USER"
+
+
 
 
 def get_snowflake_connection(username, password, account, authenticator, warehouse, database, schema, role):
@@ -1033,8 +1027,8 @@ def run_validation():
 
         
     # Email the same output file you wrote to
-    to_email = "kristi.chaput@elevancehealth.com;"
-    cc_email = "nicole.murray@elevancehealth.com;"
+    to_email = "test.test@test.com;"
+    cc_email = "test.test@test.com;"
 
     subject = f"PQSM Validation for SNAP period: {glsnap}"
     body = f"""Hello Team,
@@ -1049,11 +1043,7 @@ def run_validation():
                 Thanks,
 
                 Nicole Murray
-                Business Info Consultant
-                Health Economics, Provider Insights
-                W@H GA
-                C: (404) 593-1539
-                elevancehealth.com
+       
                 """
 
     send_email_mapi(subject, body, to_email, cc_email, output_file_path)
