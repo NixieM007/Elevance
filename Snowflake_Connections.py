@@ -6,10 +6,7 @@ from datetime import datetime
 from snowflake.connector.errors import Error as SnowflakeError
 
 # Define connection constants
-USERNAME = "AN968878AD"
-PASSWORD = "F63Izqtxh#uS!x629ATa"
-ACCOUNT = "carelon-edaprod1.privatelink"
-AUTHENTICATOR = "https://portalsso.elevancehealth.com?snowflake=okta"
+
 
 
 def get_snowflake_connection(username, password, account, authenticator, warehouse, database, schema, role):
@@ -34,20 +31,20 @@ def get_snowflake_connection(username, password, account, authenticator, warehou
 
 # Example usage
 
-WAREHOUSE = "DL_MDO_USER_WH_M"
-DATABASE = "P01_PDL"
-SCHEMA = "P01_EDL_NOHAPHI"
-ROLE = "P01_EDL_NOHAPHI_USER"
+WAREHOUSE = "test"
+DATABASE = "test"
+SCHEMA = "test"
+ROLE = "test"
 connection1 = get_snowflake_connection(USERNAME, PASSWORD, ACCOUNT, AUTHENTICATOR, WAREHOUSE, DATABASE, SCHEMA, ROLE)
 
 if connection1:
     print("Connected to Connection1")
     connection1.close()
 
-WAREHOUSE2 = "DL_MDO_USER_WH_M"
-DATABASE2 = "P01_PDL"
-SCHEMA2= "PDL_ALLPHI"
-ROLE2 = "P01_PDL_ALLPHI_USER"  # Removed the semicolon here
+WAREHOUSE2 = "test"
+DATABASE2 = "test"
+SCHEMA2= "test"
+ROLE2 = "test"  # Removed the semicolon here
 connection2 = get_snowflake_connection(USERNAME, PASSWORD, ACCOUNT, AUTHENTICATOR, WAREHOUSE2, DATABASE2, SCHEMA2, ROLE2)
 
 if connection2:
